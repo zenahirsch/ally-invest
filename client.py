@@ -29,7 +29,7 @@ class AllyClient:
         r = request.get(constants.PATH_GET_ACCOUNT_HOLDINGS % account_id,
                         self.auth)
         return r.content
-    
+
     def get_account_orders(account_id):
         r = request.get(constants.PATH_ORDERS, self.auth)
         return r.content
